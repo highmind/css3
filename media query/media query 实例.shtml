@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>media query</title>
+<style>
+img{border:none;display: block;}
+.imgWrap{width:98%;margin:0 auto;}
+.imgBox{float:left;width:48%;margin-top:20px;/*border:8px solid rgba(182,182,182,0.6);*/}
+.imgBox img{border-radius:6px;}
+.imgBox:nth-child(2n){margin-left:4%;}
+/*为大屏幕设备 pc */
+@media all and (min-width: 1020px){
+  .imgWrap{width:1020px;margin:0 auto;}
+  .imgBox:nth-child(2n){margin-left:20px;}
+  .imgBox{width:300px;margin-left:20px;}
+
+}
+
+/*for tablet*/
+@media all and (max-width: 800px){
+  
+
+}  
+
+
+/*for 720p 手机*/
+@media all and (max-width: 420px) {
+   
+}
+
+/*for iphone5*/
+@media all and (max-width: 330px) {
+   .imgBox{width:100%;}
+   .imgBox:nth-child(2n){margin-left:0;}
+}
+
+
+
+
+
+
+</style>
+   
+</head>
+<body>
+ 
+ <div class="imgWrap">
+ 	<a href="" class="imgBox">
+ 		<img width="100%" src="images/1.jpg" alt="">
+ 	</a>
+ 	<a href="" class="imgBox">
+ 		<img width="100%" src="images/2.jpg" alt="">
+ 	</a>
+ 	<a href="" class="imgBox">
+ 		<img width="100%" src="images/3.jpg" alt="">
+ 	</a>
+ 	<a href="" class="imgBox">
+ 		<img width="100%" src="images/4.jpg" alt="">
+ 	</a>
+ 	<a href="" class="imgBox">
+ 		<img width="100%" src="images/5.jpg" alt="">
+ 	</a>
+ </div>
+
+
+</body>
+</html>

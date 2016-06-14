@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>flex-box</title>
+<style>
+
+/*成一列*/
+
+ .flexWrap{
+    display: -webkit-flex;
+    display:flex;
+    -webkit-flex-direction:column;
+    flex-direction:column;
+ }
+
+ .box{
+  width:100px;
+  height:100px;
+  margin-left:10px;
+  margin-top:10px;
+  background-color: orange;
+}
+  
+ 
+
+
+</style>
+   
+</head>
+<body>
+
+<div class="flexWrap">
+   <div class="box"></div>
+   <div class="box"></div>
+   <div class="box"></div>
+   <div class="box"></div>
+</div>
+
+</body>
+</html>

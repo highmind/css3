@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>css3 filter</title>
+    <style>
+     .container{width:1200px;margin:0 auto;}
+     .box{float:left;margin-left:30px;width:320px;height:250px;margin-top:30px;}
+     .testImg{width:320px;height:200px;}
+
+     .blur{filter:blur(10px);
+      -webkit-filter:blur(10px);
+      -moz-filter:blur(10px);
+     }
+ 
+     /*灰度*/
+     .grayscale{
+      filter:grayscale(80%);
+      -webkit-filter:grayscale(80%);
+      -moz-filter:grayscale(80%);
+     }
+     /*褐色*/
+     .sepia { filter:sepia(80%);
+      -webkit-filter:sepia(80%);
+      -moz-filter:sepia(80%);
+     }
+
+     /*饱和度*/
+     .saturate{filter:saturate(200%);
+      -webkit-filter:saturate(200%);
+      -moz-filter:saturate(200%);
+     }
+
+     /*色相*/
+     .hue-rotate{
+      filter:hue-rotate(90deg);
+      -webkit-filter:hue-rotate(90deg);
+      -moz-filter:hue-rotate(90deg);
+     }
+
+     /*反色*/
+
+     .invert{filter:invert(100%);
+      -webkit-filter:invert(100%);
+      -moz-filter:invert(100%);}
+
+    /*明度*/
+
+    .brightness{filter:brightness(25%);
+       -webkit-filter:brightness(25%);
+       -moz-filter:brightness(25%);
+    }
+
+    /*对比度*/
+
+    .contrast{
+
+      filter:contrast(150%);
+      -webkit-filter:contrast(150%);
+      -moz-filter:contrast(150%);
+    }
+
+   /*阴影*/
+    .drop-shadow{
+
+      filter:drop-shadow(10px 10px 10px red);
+      -webkit-filter:drop-shadow(10px 10px 10px red);
+      -moz-filter:drop-shadow(10px 10px 10px red);
+    }
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="box">
+    <h3>正常</h3>
+    <img class="testImg" src="images/img.jpg" alt="">
+   </div> 
+  <div class="box">
+    <h3>模糊</h3>
+    <img class="testImg blur" src="images/img.jpg" alt="">
+  </div>
+
+  <div class="box">
+    <h4>灰度</h4>
+    <img class="testImg grayscale" src="images/img.jpg" alt="">
+  </div>
+
+<div class="box">
+  <h4>褐色</h4>
+  <img class="testImg sepia" src="images/img.jpg" alt="">
+</div>
+
+<div class="box">
+  <h4>饱和度</h4>
+  <img class="testImg saturate" src="images/img.jpg" alt="">
+</div>
+
+<div class="box">
+  <h4>色相</h4>
+  <img class="testImg hue-rotate" src="images/img.jpg" alt="">
+</div>
+
+<div class="box">
+  <h4>反色</h4>
+  <img class="testImg invert" src="images/img.jpg" alt="">
+</div>
+
+<div class="box">
+   <h4>明度</h4>
+  <img class="testImg brightness" src="images/img.jpg" alt="">
+</div>
+
+<div class="box">
+ <h4>对比度</h4>
+  <img class="testImg contrast" src="images/img.jpg" alt="">
+</div>
+
+<div class="box">
+   <h4>阴影</h4>
+  <img class="testImg drop-shadow" src="images/img.jpg" alt="">
+</div>  
+
+</div>
+</body>
+</html>

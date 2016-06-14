@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>UI</title>
+<link href="css/ui.css" rel="stylesheet" type="text/css">
+<link href="css/jquery-ui-1.8.12.custom.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.12.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery.ui.slider.js"></script>
+<script type="text/javascript" src="js/ui.js"></script>
+</head>
+
+<body>
+	<div class="musicPlayer">
+    <!--封面-->
+       	<img class="cover" src="images/cover.png" alt="cover">
+	<!--封面-->
+    <!--右侧歌曲区-->
+        <div class="song">
+        	<!--歌曲信息-->
+            <div class="songsInfo">
+                <h3 class="song-name">爱江山更爱美人</h3>
+                <p class="singer">李丽芬</p>
+            </div>
+            <!--歌曲信息-->
+            <!--控制区-->
+            <div class="btnMenu">
+            	<!--按钮-->
+            	<span class="pre">&nbsp;</span>
+                <span class="play" id="playBtn">&nbsp;</span>
+                <span class="next">&nbsp;</span>
+                <!--按钮-->
+                <!--进度条-->
+              	<div id="progress">
+                </div>
+                <!--进度条-->
+                <!--音量条及图标-->
+            	<span id="volumeIco" class="volumeUp">
+                </span>
+                <div class="volumeBar">
+                	<div id="volume">
+                    </div>
+                </div>
+                <!--音量条及图标-->
+             </div>
+            <!--歌曲信息--> 
+            
+          </div>
+        
+    </div>
+</body>
+</html>

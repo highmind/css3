@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>flex-box</title>
+<style>
+
+/*成一列*/
+
+ .flexWrap{
+ 
+  /*新版语法*/
+    display: -webkit-flex;
+    display:flex;
+    -webkit-flex-direction:row;
+    flex-direction:row;
+
+  /*旧版语法*/
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    justify-content: space-around;
+  
+
+ }
+
+ .box{
+   -webkit-box-flex: 1;
+    flex: 1;
+  width:100px;
+  height:100px;
+  margin-left:10px;
+  background-color: orange;}
+  
+ 
+
+
+</style>
+   
+</head>
+<body>
+
+<div class="flexWrap">
+   <div class="box"></div>
+   <div class="box"></div>
+   <div class="box"></div>
+   <div class="box"></div>
+</div>
+
+</body>
+</html>

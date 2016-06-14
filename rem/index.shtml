@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="wap-font-scale" content="no">
+    <title>rem</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+     <script type="text/javascript">
+    !function(a){function b(){var b=a.document,c=b.documentElement,d=c.getBoundingClientRect().width;document.documentElement.style.fontSize=100*(d/640)+"px"}window.addEventListener("DOMContentLoaded",function(){b()},!1),window.addEventListener("resize",function(){b()}),b()}(window);
+    </script>  
+    <style>
+      /*设计稿为640px*/
+      html{font-size:100px;}
+
+      .list{width:100%;background-color: #eae8e8;overflow: hidden;}
+
+      .item{background-color: #ffffff;overflow:hidden;padding:0.04rem 0;margin-bottom:0.08rem;}
+      .product,.itemContent{float:left;}
+
+      .product{margin-left:0.04rem;width:1.86rem;height:1.86rem;overflow: hidden;}
+      .itemContent{margin-left:0.2rem;width:4.30rem;overflow: hidden;}
+      .itemContent p{margin-top:0.1rem;font-size:0.24rem;line-height: 0.4rem;}
+
+    </style>
+</head>
+<body>
+
+  <div class="list">
+     
+     <div class="item">
+
+        <a href="#" class="product">
+          <img width="100%" src="images/img.jpg" alt="">
+        </a>
+
+        <div class="itemContent">
+          <p>雪纺连衣裙新品女夏装修身蕾丝无袖
+           蝴蝶结少女连衣裙</p>
+        </div>
+
+     </div>
+
+      <div class="item">
+
+        <a href="#" class="product">
+          <img width="100%" src="images/img.jpg" alt="">
+        </a>
+
+        <div class="itemContent">
+          <p>雪纺连衣裙新品女夏装修身蕾丝无袖
+           蝴蝶结少女连衣裙</p>
+        </div>
+
+
+     </div>
+
+      <div class="item">
+
+        <a href="#" class="product">
+          <img width="100%" src="images/img.jpg" alt="">
+        </a>
+
+        <div class="itemContent">
+          <p>雪纺连衣裙新品女夏装修身蕾丝无袖
+           蝴蝶结少女连衣裙</p>
+        </div>
+
+
+     </div>
+
+  </div>
+
+</body>
+</html>
