@@ -1,17 +1,22 @@
 
 /*使用方法*/
 
-/*<h1 class="animated fadeInDown">测试</h1>*/
+/*<h1 class="animated  fadeInDown">测试</h1>*/
 
 /*动画时长*/
 .animated{
 	animation-duration: 1s;
     animation-fill-mode:both;
+
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode:both;
 }
 
 /*添加这个类可以实现循环动画*/
 .animated.infinite{
 	animation-iteration-count:infinite;
+   -webkit-animation-iteration-count:infinite;
+
 }
 
 /*动画帧*/
@@ -25,12 +30,28 @@
 		opacity:1;
 		transform:none;
 	}
-	
+
+
+}
+
+/*动画帧*/
+@-webkit-keyframes fadeInDown{
+	0%{
+		opacity:0;
+		-webkitp-transform:translateY(-100%);
+	}
+
+	100%{
+		opacity:1;
+		-webkit-transform:none;
+	}
+
 
 }
 
 /*调用*/
 .fadeInDown{
 	animation-name:fadeInDown;
+	-webkit-animation-name:fadeInDown;
 	
 }
