@@ -1,12 +1,20 @@
+
+/*使用方法*/
+
+/*<h1 class="animated fadeInDown">测试</h1>*/
+
+/*动画时长*/
 .animated{
 	animation-duration: 1s;
     animation-fill-mode:both;
 }
 
+/*添加这个类可以实现循环动画*/
 .animated.infinite{
 	animation-iteration-count:infinite;
 }
 
+/*动画帧*/
 @keyframes fadeInDown{
 	0%{
 		opacity:0;
@@ -21,7 +29,7 @@
 
 }
 
-
+/*调用*/
 .fadeInDown{
 	animation-name:fadeInDown;
 	
