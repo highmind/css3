@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>background-origin</title>
+    <style>
+    /*background-size: auto || <length> || <percentage> || cover || contain*/
+        .box{width:620px;height:480px;border:30px solid rgba(255,186,0,0.5);
+        background:url(images/img.jpg) no-repeat;
+        padding:10px;
+        background-size:auto;
+        margin-top:10px;
+        }
+
+        .box1{width:620px;height:480px;border:30px solid rgba(255,186,0,0.5);
+            padding:10px;
+        background:url(images/img.jpg) no-repeat;
+       /* background-size:100px 100px;*/
+       background-size:50% 50%;
+        margin-top:10px;
+        }
+
+        .box2{width:620px;height:480px;border:30px solid rgba(255,186,0,0.5);
+            padding:10px;
+        background:url(images/img.jpg) no-repeat;
+        background-size:cover;
+        margin-top:10px;
+        }
+
+         .box3{width:620px;height:480px;border:30px solid rgba(255,186,0,0.5);
+            padding:10px;
+        background:url(images/img.jpg) no-repeat;
+        background-size:contain;
+        margin-top:10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>background-size:auto</h3>
+    <div class="box">
+        
+    </div>
+    
+    <h3>background-size:50% 50%</h3>
+    <div class="box1">
+        
+    </div>
+
+    <h3>background-size:cover</h3>
+    <div class="box2">
+        
+    </div>
+
+    <h3>background-size:contain</h3>
+    <div class="box3">
+        
+    </div>
+</body>
+</html>

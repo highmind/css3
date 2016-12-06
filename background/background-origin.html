@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>background-origin</title>
+    <style>
+        .box{width:420px;height:280px;border:30px solid rgba(255,186,0,0.5);
+        background:url(images/img.jpg) no-repeat;
+        padding:10px;
+        background-origin: padding;  /*旧语法*/
+        background-origin: padding-box; /*新语法*/
+        margin-top:10px;
+        }
+
+        .box1{width:420px;height:280px;border:30px solid rgba(255,186,0,0.5);
+            padding:10px;
+        background:url(images/img.jpg) no-repeat;
+        background-origin: border;
+        background-origin: border-box;
+        margin-top:10px;
+        }
+
+        .box2{width:420px;height:280px;border:30px solid rgba(255,186,0,0.5);
+            padding:10px;
+        background:url(images/img.jpg) no-repeat;
+        background-origin: content;
+        background-origin: content-box;
+        margin-top:10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>background-origin:padding</h3>
+    <div class="box">
+        
+    </div>
+    
+    <h3>background-origin:border</h3>
+    <div class="box1">
+        
+    </div>
+
+    <h3>background-origin:content</h3>
+    <div class="box2">
+        
+    </div>
+
+</body>
+</html>
