@@ -6,33 +6,86 @@
     <title>flex-box</title>
 <style>
 
+
 /*成一列*/
 
- .flexWrap{
- 
+.flexWrap{
   /*新版语法*/
     display: -webkit-flex;
     display:flex;
     -webkit-flex-direction:row;
     flex-direction:row;
-
   /*旧版语法*/
     display: -webkit-box;
     -webkit-box-orient: horizontal;
     justify-content: space-around;
-  
+}
 
- }
-
- .box{
-   -webkit-box-flex: 1;
+.box{
+  -webkit-box-flex: 1; /*旧版语法*/
     flex: 1;
   width:100px;
   height:100px;
   margin-left:10px;
-  background-color: orange;}
+  background-color: orange;
+  color:#fff;
+  font-size:30px;
+  text-align: center;
+  font-family: "arial"
+}
   
- 
+.flexWrap2{
+  display:flex;
+  flex-direction:column;
+}
+
+.flexWrap2 .box{margin-top:10px;}
+
+.flexWrap3{
+  display: flex;
+  flex-direction:row-reverse;
+}
+
+.flexWrap4{
+  display: flex;
+  flex-direction:column-reverse;
+}
+
+.flexWrap4 .box{
+  margin-top:10px;
+}
+
+.flexWrap5{
+  border:1px solid red;
+  width:500px;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;  /*配合min-width等使用*/
+}
+
+.flexWrap5 .box{ 
+  /*width:100px;*/
+  min-width:100px;
+  height:100px;
+  margin-top:10px;
+  
+}
+
+.flexWrap6{
+  border:1px solid red;
+  width:500px;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap-reverse;  /*配合min-width等使用*/
+}
+
+.flexWrap6 .box{ 
+  /*width:100px;*/
+  min-width:100px;
+  height:100px;
+  margin-top:10px;
+  
+}
 
 
 </style>
@@ -40,11 +93,58 @@
 </head>
 <body>
 
+<h3>横向 flex-direction:row</h3>
 <div class="flexWrap">
-   <div class="box"></div>
-   <div class="box"></div>
-   <div class="box"></div>
-   <div class="box"></div>
+   <div class="box">1</div>
+   <div class="box">2</div>
+   <div class="box">3</div>
+   <div class="box">4</div>
+</div>
+
+<h3>纵向 flex-direction:column</h3>
+<div class="flexWrap2">
+   <div class="box">1</div>
+   <div class="box">2</div>
+   <div class="box">3</div>
+   <div class="box">4</div>
+</div>
+
+<h3>横向反向 flex-direction:row-reverse</h3>
+<div class="flexWrap3">
+   <div class="box">1</div>
+   <div class="box">2</div>
+   <div class="box">3</div>
+   <div class="box">4</div>
+</div>
+
+<h3>竖向反向 flex-direction:column-reverse</h3>
+<div class="flexWrap4">
+   <div class="box">1</div>
+   <div class="box">2</div>
+   <div class="box">3</div>
+   <div class="box">4</div>
+</div>
+
+<h3>超出换行 flex-wrap:wrap</h3>
+<div class="flexWrap5">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>
+  <div class="box">4</div>
+  <div class="box">5</div>
+  <div class="box">6</div>
+  <div class="box">7</div>
+</div>
+
+<h3>超出换行 第二行在上flex-wrap:wrap-reverse</h3>
+<div class="flexWrap6">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>
+  <div class="box">4</div>
+  <div class="box">5</div>
+  <div class="box">6</div>
+  <div class="box">7</div>
 </div>
 
 </body>
